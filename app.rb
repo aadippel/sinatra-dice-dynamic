@@ -8,7 +8,7 @@ end
 get("/dice/:number_of_dice/:number_of_sides") do
   @num_dice = params.fetch("number_of_dice").to_i
   
-  @num_sides = perams.fetch("number_of_sides").to_i
+  @num_sides = params.fetch("number_of_sides").to_i
   
   @rolls = []
   
